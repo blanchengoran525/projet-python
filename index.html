@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grille des programmes</title>
+<link rel="stylesheet" href="Design App.css">
+    </head>
+    <body>
+        <h1>Grille des programmes</h1>
+
+        <div id="direct"></div>
+
+        <form id="f">
+            <input id="titre" placeholder="Emission" required>
+            <select id="cat">
+                <option>Info</option><option>Magazine</option>
+                <option>Divertissement</option><option>Film</option><option>Sport</option>
+            </select>
+            <input id="debut" type="time" required>
+            <input id="duree" type="number" min="5" placeholder="Durée (min)" required>
+            <button>Ajouter</button>
+        </form>
+
+        <table>
+            <thead><tr><th>Heure</th><th>Emission</th><th>Catégorie</th></tr></thead>
+            <tbody id="liste"></tbody>
+        </table>
+        <script src="programmes.js"></script>
+    </body>
+</html>
